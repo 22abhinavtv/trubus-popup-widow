@@ -13,11 +13,11 @@
         <h1>listing buses</h1>
         <button id="button">popup</button>
     </div>
-    <div class="popup">
+    <div class="popup" id="popup">
         <div class="popupContent">
-            <img src="close.png" alt="" class="close">
+            <a href=""><img src="close.png" alt="" class="close">   </a>
             <img src="bus.png" class="busImage" alt="">
-            <li>bus name - tyme</li>
+            <li>mythre - 10:20  SEAT (48/50)</li>
         </div>
     </div>
 </body>
@@ -28,7 +28,8 @@
         })
 
         document.querySelector('close').addEventListener('click',function(){
-            document.querySelector('.popup').style.display = 'none'
+            document.getElementById('#popup').style.display = 'none'
+            //document.querySelector('.popup').style.display = 'none'
         })
     </script>
 </html>
